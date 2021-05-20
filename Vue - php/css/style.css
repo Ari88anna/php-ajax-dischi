@@ -1,0 +1,62 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    
+}
+/* Common */
+body {
+    font-family: 'Roboto', sans-serif;
+}    
+
+.wrapper {
+    background-color:#141922;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+
+.logo {
+    padding: 50px 0;
+}
+
+.logo  img {
+    width: 45px;
+}
+
+/* MAIN */
+
+.cd-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.cd-box {
+    width: calc(100% / 3 - 70px);    
+    color: white;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+}
+
+.cd-box .title,
+.cd-box .author,
+.cd-box .year {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.cd-box .title {
+    font-size: 20px;
+}
