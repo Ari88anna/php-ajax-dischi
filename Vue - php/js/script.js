@@ -4,12 +4,18 @@ var app = new Vue({
 
     data: {
         cds: [],
+        genreSelected: ''
     },
 
     methods: {
         getCds: function() {
             axios
-            .get('http://localhost:8888/php-ajax-dischi/Vue%20-%20php/server.php')
+            .get('http://localhost:8888/php-ajax-dischi/Vue%20-%20php/server.php', {
+
+                params: {
+                    genere: this.genreSelected
+                }
+            })
             .then(response => {
                 this.cds = response.data;
             })
@@ -17,6 +23,6 @@ var app = new Vue({
 
     },
     mounted() {
-        this.getCds()
+        this.getCds();
     }
 }) 

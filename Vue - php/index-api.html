@@ -28,6 +28,21 @@
             <!-- MAIN -->
             <main>
 
+                <div class="select-container">
+
+                    <label for="">Select by genre</label>
+                    <select v-model="genreSelected" @change="getCds">
+
+                        <option value="">Tutti</option>
+                        <option value="">Metal</option>
+                        <option value="">Pop</option>
+                        <option value="">Rock</option>
+                        <option value="">Jazz</option>  
+
+                    </select>
+
+                </div>
+
                 <div class="cd-container">                  
 
                 
